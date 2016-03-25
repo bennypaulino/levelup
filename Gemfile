@@ -7,7 +7,7 @@ gem 'rails', '4.0.1'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -29,6 +29,13 @@ gem 'jbuilder', '~> 1.2'
 
 # Speeds up your page load times, and allows you to see (more detailed) errors in your Heroku Logs.
 gem 'rails_12factor', group: :production
+
+# A Sass-powered version of Bootstrap 3
+gem 'bootstrap-sass', '~> 3.3.5.1'
+
+# Declarative dependency management for JavaScript and CSS assets, as well as a powerful preprocessor 
+# pipeline that allows you to write assets in languages like CoffeeScript, Sass and SCSS.
+gem 'sprockets', '2.11.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
