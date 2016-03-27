@@ -2,6 +2,10 @@
 
 //font-family: 'Jaldi', sans-serif;
 
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin:0;
+}
+
 .navbar {
   border-radius: 0;
   font-family: 'Jura', sans-serif;
@@ -9,7 +13,6 @@
   background: url('escheresque53.png');
   padding: 1.5em 0 1.5em;
 }
-
 
 .navbar a.navbar-brand {
   font-size: 3em;
@@ -21,6 +24,54 @@
   color: #32810a;
   text-shadow: 0px 0px 10px rgba(132, 212, 72, 0.75);
   transition: .75s;
-
 }
-  
+
+.navbar-nav {
+  color: #0f2803;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.navbar-nav:hover {
+  text-shadow: 0px 0px 4px rgba(50, 50, 50, 0.35);
+}
+
+#coursesLink {
+  padding-left: 1em;
+}
+
+.hero {
+  background: url('hero.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 380px;
+  box-shadow: 0px 4px 12px rgba(133,116,133,0.90);
+}
+
+.frosty {
+  background: rgba(0,0,0, 0.4);
+  color: rgba(255,255,255, 0.9);
+  border-radius: 6px;
+}
+
+.frosty h1 {
+  font-family: 'Jura', sans-serif;
+  font-weight: 100;
+  text-shadow: rgba(0,0,0,0.60) 1px 1px;
+}
+
+.frosty h2 {
+  font-family: 'Jura', sans-serif;
+  font-weight: 200;
+  text-shadow: rgba(0,0,0,0.80) 1px 1px;
+}
+
+#learn {
+  margin-bottom: 2em;
+}
+
+.btn {
+  border-radius: 20px;
+}
