@@ -4,10 +4,13 @@
   <br>
   <%= simple_form_for @course, url: instructor_courses_path do |f| %>
     <%= f.input :title, required: true, autofocus: true %>
+    <br>
     <%= f.input :description, required: true %>
+    <br>
     <%= f.input :cost %>
     <br>
-    <%= f.submit "Create", class: 'btn btn-success' %>
+    <br>
+    <%= f.submit "Create", class: 'btn btn-success col-xs-3' %>
     <br>
   <% end %>
   <br>
