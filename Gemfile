@@ -41,6 +41,9 @@ gem 'sprockets', '2.11.0'
 # Provides user authentication
 gem 'devise'
 
+# Generate forms with many options to customize generated markup.
+gem 'simple_form'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
