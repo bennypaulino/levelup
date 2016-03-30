@@ -1,5 +1,5 @@
 class Instructor::CoursesController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update]
 
   def new
     @course = Course.new
@@ -14,7 +14,27 @@ class Instructor::CoursesController < ApplicationController
     @course = Course.find(params[:id])
   end
 
-  def destroy
+  def edit
+    @course = Course.find(params[:id])
+
+    if @course.user != current_user
+      return render text: 'Not Allowed', status: :forbidden
+    end
+  end
+
+  def update
+    @course = Course.find(params[:id])
+
+    if @course.user != current_user
+      return render text: 'Not Allowed', status: :forbidden
+    end
+
+    @course.update_attributes(course_params)
+    if @course.valid?
+      redirect_to instructor_course_path(@course)
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
 

@@ -2,3 +2,12 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
   <h1 class="text-center"><%= @course.title %></h1>
 </div>
+
+<div class="col-xs-10 col-xs-offset-1">
+  <div class="pull-right">
+    <% if current_user && current_user == @course.user %>
+      <%= link_to 'Edit', edit_instructor_course_path(@course), class: 'btn btn-warning' %>
+    <% end %>
+    
+  </div>
+</div>
