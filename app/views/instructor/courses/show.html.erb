@@ -6,7 +6,8 @@
 <div class="col-xs-10 col-xs-offset-1">
   <div class="pull-right">
     <% if current_user && current_user == @course.user %>
-      <%= link_to 'Edit', edit_instructor_course_path(@course), class: 'btn btn-warning' %>
+      <%= link_to 'Edit', edit_instructor_course_path(@course), class: 'btn btn-warning' %>&nbsp&nbsp&nbsp
+      <%= link_to 'Delete', instructor_course_path(@course.id), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn btn-danger' %>
     <% end %>
     
   </div>

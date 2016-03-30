@@ -37,6 +37,15 @@ class Instructor::CoursesController < ApplicationController
     end
   end
 
+  def destroy
+    @course = Course.find(params[:id])
+    if @course.user != current_user
+      return render text: 'Not Allowed', status: :forbidden
+    end
+
+    @course.destroy
+    redirect_to root_path
+  end
 
   private
 

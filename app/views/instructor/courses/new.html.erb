@@ -3,8 +3,8 @@
   <h1>Add a new course</h1>
   <br>
   <%= simple_form_for @course, url: instructor_courses_path do |f| %>
-    <%= f.input :title %>
-    <%= f.input :description %>
+    <%= f.input :title, required: true, autofocus: true %>
+    <%= f.input :description, required: true %>
     <%= f.input :cost %>
     <br>
     <%= f.submit "Create", class: 'btn btn-success' %>
