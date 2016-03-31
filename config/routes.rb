@@ -3,6 +3,8 @@ Levelup::Application.routes.draw do
   root 'static_pages#index'
   resources :courses, only: [:index, :show]
   namespace :instructor do
-    resources :courses, only: [:new, :create, :show, :edit, :update, :destroy]
+    resources :courses, only: [:new, :create, :show, :edit, :update, :destroy] do
+      resources :sections, only: [:new, :create]
+    end
   end
 end
