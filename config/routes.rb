@@ -4,7 +4,7 @@ Levelup::Application.routes.draw do
   resources :courses, only: [:index, :show]
   namespace :instructor do
     resources :sections, only: [] do
-      resources :lessons, only: [:new, :create, :edit, :update]
+      resources :lessons, only: [:new, :create]
     end
     resources :courses, only: [:new, :create, :show, :edit, :update, :destroy] do
       resources :sections, only: [:new, :create]
