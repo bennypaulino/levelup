@@ -44,6 +44,9 @@ gem 'devise'
 # Generate forms with many options to customize generated markup.
 gem 'simple_form'
 
+# Provides a simple and extremely flexible way to upload files from Ruby applications.
+gem 'carrierwave'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
