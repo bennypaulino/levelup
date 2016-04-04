@@ -47,6 +47,13 @@ gem 'simple_form'
 # Provides a simple and extremely flexible way to upload files from Ruby applications.
 gem 'carrierwave'
 
+#Configuration values often include sensitive information. Figaro strives to be secure 
+# by default by encouraging a convention that keeps configuration out of Git.
+gem 'figaro'
+
+# Allows carrierwave to be able to communicate with Amazon S3
+gem 'fog', "~> 1.3.1"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

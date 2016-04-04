@@ -13,6 +13,8 @@ class User < ActiveRecord::Base
   validates :username, presence: true, uniqueness: true, :case_sensitive => false,
     length: { minimum: 3, maximum: 20 }
 
+  mount_uploader :image, ImageUploader
+
   # Avoid any conflict between username and email being the same.
   def validate_username
     if User.where(email: username).exists?
