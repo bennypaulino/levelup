@@ -5,6 +5,8 @@
   <%= simple_form_for @course, url: instructor_courses_path do |f| %>
     <%= f.input :title, required: true, autofocus: true %>
     <br>
+    <%= f.input :image %>
+    <br>
     <%= f.input :description, required: true %>
     <br>
     <%= f.input :cost %>

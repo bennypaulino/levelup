@@ -4,7 +4,11 @@
   <br>
   <%= simple_form_for @course, url: instructor_course_path(@course.id) do |f| %>
     <%= f.input :title, required: true, autofocus: true %>
+    <br>
     <%= f.input :description, required: true %>
+    <br>
+    <%= f.input :image, class: 'btn btn-primary' %>
+    <br>
     <%= f.input :cost %>
     <br>
     <%= f.submit "Update", class: 'btn btn-primary' %>
