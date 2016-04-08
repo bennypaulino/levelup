@@ -60,6 +60,8 @@ gem 'mini_magick', '~> 4.3.1'
 # Helps to integrate Amazon AWS S3 storage
 gem 'carrierwave-aws'
 
+# Allows for securely accepting a customer’s credit card details.
+gem 'stripe'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
