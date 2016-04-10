@@ -66,6 +66,9 @@ gem 'stripe'
 # A row sorting library that uses ARel aggressively and is better optimized than most other libraries.
 gem 'ranked-model'
 
+# jQuery UI assets (JavaScripts, stylesheets, and images) for the Rails asset pipeline.
+gem 'jquery-ui-rails'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
