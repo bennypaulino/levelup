@@ -15,6 +15,21 @@
       });
     });
   </script>
+
+  <script type="text/javascript">
+    $(function(){
+      $('.sections').sortable({
+        update: function( event, ui ) {
+          $.ajax({
+            type: 'PUT',
+            url: ui.item.data('update-url'),
+            dataType: 'json',
+            data: { section: { row_order_position: ui.item.index() } },
+          });
+        }
+      });
+    });
+  </script>
   <br>
 
   <%= image_tag current_course.image, class: 'img-responsive center-block' %>
@@ -27,10 +42,11 @@
     <%= current_course.description %>
     <br>
     <br>
-    
-    <ul>
-      <% current_course.sections.each do |section| %>
-        <li>
+
+    <div id="notice"> </div>
+    <ul class="sections">
+      <% current_course.sections.rank(:row_order).each do |section| %>
+        <li data-update-url=<%= instructor_section_path(section) %>>
           <%= section.title %>
           <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'pull-right btn btn-primary btn-xs'  %>
           <ul class="lessons">
@@ -42,12 +58,12 @@
               </li>
             <% end %>
           </ul>
-          <br class="clr">
+          
         </li>
       <% end %>
     </ul>
   </div>
-
+  <br class="clr">
   <br>
 
   <div class="text-center">
