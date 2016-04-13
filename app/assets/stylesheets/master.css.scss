@@ -141,3 +141,40 @@ body {
 .enrolled {
   font-size: 1.5em;
 }
+
+ul {
+  list-style-type: none;
+}
+
+.section-li {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 1.7em;
+  margin: 1.5em;
+}
+
+ul .header {
+  font-size: 2em;
+}
+
+ul .header .glyphicon {
+  font-size: .56em;
+}
+
+.lessons li {
+  background: black;
+  color: #fff;
+  margin: .7em;
+  font-weight: 100;
+  padding: .6em;
+  font-size: 1.2em;
+}
+
+.lessons li b {
+  font-size: 1.8em;
+  font-weight: 100;
+}
+
+.lessons li p {
+  margin: .1em;
+}

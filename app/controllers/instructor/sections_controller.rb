@@ -37,6 +37,7 @@ class Instructor::SectionsController < ApplicationController
     end
   end
 
+  # there is no "course_id" in the URL. Extract the course from the loaded up section in the database.
   helper_method :current_course
   def current_course
     if params[:course_id]
