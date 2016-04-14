@@ -32,7 +32,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
-              <li><%= link_to 'My Courses', root_path, class: 'userNav' %></li>
+              <li><%= link_to 'My Dashboard', dashboard_path, class: 'userNav' %></li>
               <li><%= link_to 'Sign out', destroy_user_session_path, class: 'userNav', method: :delete %></li>
             <% else %>
               <li><%= link_to 'Log in', new_user_session_path, class: 'userNav' %></li>
@@ -62,7 +62,7 @@
       <br>
       <%= link_to 'Teach a course', new_instructor_course_path, class: 'userNav' %>
       <br>
-      <%= link_to 'View Dashboard', '#', class: 'userNav' %>
+      <%= link_to 'View Dashboard', dashboard_path, class: 'userNav' %>
       <br>
     </div>
   </div>
