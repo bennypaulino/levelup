@@ -58,12 +58,47 @@
 
   <div id="footer">
     <div class="container">
-      <b>Teachers</b>
-      <br>
-      <%= link_to 'Teach a course', new_instructor_course_path, class: 'userNav' %>
-      <br>
-      <%= link_to 'View Dashboard', dashboard_path, class: 'userNav' %>
-      <br>
+      <div class="col-xs-12 col-sm-3">
+        <b>Teachers</b>
+        <br>
+        <%= link_to 'Teach a course', new_instructor_course_path, class: 'userNav' %>
+        <br>
+        <%= link_to 'My Dashboard', dashboard_path, class: 'userNav' %>
+        <br>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>About</b>
+        <br>
+        <%= link_to 'Team', '#', class: 'userNav' %>
+        <br>
+        <%= link_to 'Careers', '#', class: 'userNav' %>
+        <br>
+        <%= link_to 'Privacy Policy', '#', class: 'userNav' %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Contact</b>
+        <br>
+        <span id="email">example@levelup.com</span>
+        <br>
+        123 Level UP Plaza
+        <br>
+        Orlando, FL 32806
+      </div>
+      <div class="col-xs-12 col-sm-3 social">
+        <b>Social</b>
+        <br>
+        <%= link_to 'https://github.com/bennypaulino' do %>
+          <%= image_tag 'github-64px.png', class: 'social-button' %>
+        <% end %>
+
+        <%= link_to 'https://www.linkedin.com/in/benny-paulino-504b96113' do %>
+          <%= image_tag 'linkedin-64px.png', class: 'social-button' %>
+        <% end %>
+        
+        <%= link_to 'https://twitter.com/i_see_in_code' do %>
+          <%= image_tag 'twitter-64px.png', class: 'social-button' %>
+        <% end %>
+      </div>
     </div>
   </div>
 
