@@ -7,12 +7,20 @@
     <%= current_lesson.subtitle %>
   </p>
 
-  <% if current_lesson.next_lesson.present? %>
-    <%= link_to lesson_path(current_lesson.next_lesson), class: 'btn btn-success pull-right' do %>
-      Next Lesson &nbsp;
-      <span class="glyphicon glyphicon-chevron-right"></span>
+  <div class="pull-right">
+    <% if current_lesson.previous_lesson.present? %>
+      <%= link_to lesson_path(current_lesson.previous_lesson), class: 'btn btn-default' do %>
+        <span class="glyphicon glyphicon-chevron-left"></span>        
+      <% end %>
+      &nbsp;
     <% end %>
-  <% end %>
+    <% if current_lesson.next_lesson.present? %>
+      <%= link_to lesson_path(current_lesson.next_lesson), class: 'btn btn-success' do %>
+        Next Lesson &nbsp;
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      <% end %>
+    <% end %>
+  </div>  
 
   <br class='clr'>
   <br>
