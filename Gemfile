@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'rails_12factor', group: :production
 
 # A Sass-powered version of Bootstrap 3
-gem 'bootstrap-sass', '~> 3.3.5.1'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 # Declarative dependency management for JavaScript and CSS assets, as well as a powerful preprocessor 
 # pipeline that allows you to write assets in languages like CoffeeScript, Sass and SCSS.
