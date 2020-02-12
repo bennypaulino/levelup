@@ -36,7 +36,7 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 # Declarative dependency management for JavaScript and CSS assets, as well as a powerful preprocessor 
 # pipeline that allows you to write assets in languages like CoffeeScript, Sass and SCSS.
 # The latest version of the Twitter Bootstrap gem has a bug and this is why we include the sprockets gem. 
-gem 'sprockets', '2.11.0'
+gem 'sprockets', '2.12.5'
 
 # Provides user authentication
 gem 'devise'
