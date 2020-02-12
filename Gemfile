@@ -55,7 +55,7 @@ gem 'figaro'
 gem 'fog', "~> 1.3.1"
 
 # Minimagick helps to manipulate images with minimal use of memory via ImageMagick
-gem 'mini_magick', '~> 4.3.1'
+gem 'mini_magick', '~> 4.9.4'
 
 # Helps to integrate Amazon AWS S3 storage
 gem 'carrierwave-aws'
