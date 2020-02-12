@@ -1,28 +1,20 @@
-== README
+# LevelUP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A two sided video streaming marketplace platform, featuring credit card payment capabilities, user role management, complex user interfaces and advanced database relationships. 
 
-Things you may want to cover:
+## Built with:
 
-* Ruby version
+* [Rails 4](https://guides.rubyonrails.org/v4.0/) - The web framework used
 
-* System dependencies
+* PostgreSQL - Database
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* [Bootstrap](https://getbootstrap.com/docs/3.3/) - CSS framework
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Technologies Used
+
+* Stripe API
+
+* AWS
+
+* jQuery
